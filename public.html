@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Workout Tracker</title>
+ </head>
+ <body>
+	<h1>Workout Tracker</h1>
+
+	<h2>Exercise Info Here</h2>
+		<form id= "workoutInsert">
+				<table id = "exerciseForm"><tbody>
+				
+					<tr>
+						<td><label for="workoutName">Workout Name:</label></td>
+						<td><input id="workoutName" type="text" name="name"></td>
+					</tr>
+					
+					<tr>
+						<td><label for="workoutReps">Reps:</label></td>
+						<td><input id="workoutReps" type="text" name="reps"></td>
+					</tr>
+					
+					<tr>
+						<td><label for="workoutWeight">Weight:</label></td>
+						<td><input id="workoutWeight" type="text" name="weight"></td>
+					</tr>
+					
+					<tr>
+						<td><label for="workoutDate">Date:</label></td>
+						<td><input id="workoutDate" type="date" name="date" placeholder="mm/dd/yyyy"></td>
+					</tr>
+					
+					<tr><td>
+						<p>lbs/kgs:<select name='lbs' class="lbs" id='unitCheck'>
+							<option value='1'>lbs</option>
+							<option value='0'>kgs</option>
+						</select></p>
+					</td></tr>
+
+					
+				</tbody></table>
+				<br/>
+				<input id="addWorkoutButton" type="submit" name="add" value="Add Exercise">
+				<br/><br/>
+				<input id="updateTableButton" type="submit" name="update" value="Update Exercise">
+				<br/><br/>
+				<input id="resetTableButton" type="submit" name="reset" value="Reset Table">
+		</form>
+		<div id="editingID"></div>
+		
+		<div id = "exerTable">
+		<table id = "exerciseTable"></table>
+		</div>
+  <script src="home.js"></script>
+ </body>
+</html>
+
+
